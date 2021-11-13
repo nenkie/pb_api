@@ -1,0 +1,20 @@
+{
+  "sqlcmd": {
+    "path": "c:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\SQLCMD.EXE"
+  },
+  "trucate_staging": {
+    "host": "",
+    "db": "",
+    "query": "EXEC staging.sp_truncate_banking_staging"
+  },
+  "merge_transactions": {
+    "host": "",
+    "db": "",
+    "query": "EXEC dwh.sp_merge_banking_transactions"
+  },
+  "merge_accounts": {
+    "host": "",
+    "db": "",
+    "query": "EXEC dwh.sp_merge_banking_accounts_snapshots"
+  }
+}

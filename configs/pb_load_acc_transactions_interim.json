@@ -1,0 +1,22 @@
+{
+  "api": {
+    "url": "",
+    "endpoint": "/transactions/interim",
+    "headers": {
+      "User-Agent": "",
+      "id": "",
+      "token": "",
+      "Content-Type": "application/json"
+    }
+  },
+  "destination": {
+    "db_connection_string": "mssql+pyodbc:",
+    "schema": "staging",
+    "table": "banking_accounts_transactions"
+  },
+  "acc": {
+    "deposit": "",
+    "primary": "",
+    "secondary": ""
+  }
+}

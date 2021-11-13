@@ -1,0 +1,25 @@
+{
+  "api": {
+    "url": "",
+    "endpoint": "/balance",
+    "headers": {
+      "User-Agent": "",
+      "id": "",
+      "token": "",
+      "Content-Type": "application/json"
+    }
+  },
+  "destination": {
+    "db_connection_string": "mssql+pyodbc:",
+    "schema": "staging",
+    "table": "banking_accounts_snapshots"
+  },
+  "acc": {
+    "deposit": "",
+    "primary": "",
+    "secondary": ""
+  },
+  "sql": {
+    "lastdate": "SELECT ISNULL(MAX(bas.dpd),'2018-01-01') AS start_date FROM dwh.banking_accounts_snapshots bas WHERE bas.acc = '{}'"
+  }
+}

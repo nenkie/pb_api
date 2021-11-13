@@ -1,0 +1,17 @@
+{
+  "api": {
+    "url": "",
+    "endpoint": "/balance/final",
+    "headers": {
+      "User-Agent": "pb_init_accounts",
+      "id": "",
+      "token": "",
+      "Content-Type": "application/json"
+    }
+  },
+  "destination": {
+    "db_connection_string": "mssql+pyodbc:",
+    "schema": "config",
+    "table": "init_accounts"
+  }
+}
